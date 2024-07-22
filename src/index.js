@@ -37,6 +37,7 @@ app.get("/video", async (req, res) => { // Route for streaming video.
     fs.createReadStream(videoPath).pipe(res);
 });
 
+
 if (require.main === module) {
     //
     // When this script is run as the entry point, starts the HTTP server.
